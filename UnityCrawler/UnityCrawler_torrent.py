@@ -20,7 +20,7 @@ url = 'https://unity3d.com/get-unity/download/archive'
 strhtml = requests.get(url)  # Get方式获取网页数据
 pattern = re.compile(
     "https://download.unity3d.com/download_unity/.*?/Unity-.*?.torrent")
-temp = re.findall(pattern, strhtml.text)
+temp = re.findall(pattern, strhtml.text)  # 正则查询
 
 # 对结果去重
 result = []
